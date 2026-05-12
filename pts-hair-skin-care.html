@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTS Hair & Skin Care — Exclusive Singapore Distributor, NK Goldilocks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --white: #FFFFFF;
+    --off-white: #FAFAF8;
+    --soft-blush: #F7F0EC;
+    --blush: #EDD9CC;
+    --blush-mid: #D4A898;
+    --rose-gold: #B5846A;
+    --rose-dark: #7A4F3A;
+    --sage: #8DA89A;
+    --sage-light: #E8EFEC;
+    --text-primary: #1C1412;
+    --text-secondary: #5C4030;
+    --text-muted: #9A7560;
+    --border: rgba(181,132,106,0.15);
+    --border-mid: rgba(181,132,106,0.3);
+    --gold: #C49A6C;
+    --gold-light: #F5E8D6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--text-primary);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 0.5px solid var(--border);
+    padding: 0 5vw;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 1px;
+  }
+
+  .nav-brand-kr {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 10px;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    font-weight: 200;
+  }
+
+  .nav-brand-en {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--rose-dark);
+    letter-spacing: 0.04em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--rose-gold); }
+
+  .nav-cta {
+    padding: 8px 20px;
+    background: var(--rose-dark);
+    color: white !important;
+    border-radius: 2px;
+    font-weight: 500 !important;
+  }
+
+  .nav-cta:hover { background: var(--rose-gold); color: white !important; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: var(--off-white);
+    display: flex;
+    align-items: center;
+    padding: 100px 5vw 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-circle {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    width: 40vw;
+    height: 40vw;
+    max-width: 560px;
+    max-height: 560px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, var(--blush) 0%, var(--soft-blush) 60%, transparent 80%);
+    pointer-events: none;
+  }
+
+  .hero-bg-ring {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    width: 44vw;
+    height: 44vw;
+    max-width: 620px;
+    max-height: 620px;
+    border-radius: 50%;
+    border: 0.5px solid var(--border-mid);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 620px;
+  }
+
+  .hero-kr-tag {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+    color: var(--rose-gold);
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-kr-tag::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 0.5px;
+    background: var(--blush-mid);
+  }
+
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.01em;
+  }
+
+  .hero h1 span {
+    color: var(--rose-gold);
+    font-style: italic;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+    font-weight: 400;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    color: var(--text-secondary);
+    max-width: 480px;
+    line-height: 1.85;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 13px 28px;
+    background: var(--rose-dark);
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover { background: var(--rose-gold); transform: translateY(-1px); }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 13px 28px;
+    background: transparent;
+    color: var(--rose-dark);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: 0.5px solid var(--border-mid);
+    border-radius: 2px;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover { border-color: var(--rose-gold); color: var(--rose-gold); }
+
+  /* TRUST BAR */
+  .trust-bar {
+    background: var(--rose-dark);
+    padding: 1.2rem 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.8);
+    font-size: 13px;
+  }
+
+  .trust-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--blush-mid);
+  }
+
+  /* SECTIONS */
+  section { padding: 100px 5vw; }
+
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+
+  .section-kr {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 11px;
+    font-weight: 200;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--rose-gold);
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
+
+  .section-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(28px, 3.5vw, 42px);
+    font-weight: 300;
+    color: var(--text-primary);
+    margin-bottom: 3rem;
+    line-height: 1.25;
+  }
+
+  .divider { border: none; border-top: 0.5px solid var(--border); }
+
+  /* WHY US */
+  #why { background: var(--white); }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0;
+    border: 0.5px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .why-item {
+    padding: 2.5rem 2rem;
+    border-right: 0.5px solid var(--border);
+    transition: background 0.2s;
+  }
+
+  .why-item:last-child { border-right: none; }
+
+  .why-item:hover { background: var(--soft-blush); }
+
+  .why-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .why-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--rose-gold);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .why-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.6rem;
+  }
+
+  .why-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+
+  /* BRAND */
+  #brand { background: var(--soft-blush); }
+
+  .brand-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .brand-visual {
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, var(--blush) 0%, var(--blush-mid) 100%);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .brand-visual::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -20%;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+  }
+
+  .brand-visual-text {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 28px;
+    font-weight: 200;
+    color: var(--rose-dark);
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+  }
+
+  .brand-visual-text small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rose-dark);
+    opacity: 0.7;
+    margin-top: 8px;
+  }
+
+  .brand-body p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.9;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+  .brand-stat-row {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 0.5px solid var(--border-mid);
+  }
+
+  .brand-stat .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--rose-gold);
+  }
+
+  .brand-stat .lbl {
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* PRODUCTS */
+  #products { background: var(--white); }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    border: 0.5px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+
+  .product-card:hover {
+    border-color: var(--blush-mid);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(181,132,106,0.1);
+  }
+
+  .product-img {
+    height: 180px;
+    background: var(--soft-blush);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .product-img-placeholder {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--blush-mid);
+    letter-spacing: 0.06em;
+  }
+
+  .product-body { padding: 1.5rem; }
+
+  .product-type {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rose-gold);
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  .product-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .product-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .product-badge {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 3px 10px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--gold-light);
+    color: var(--rose-gold);
+    border-radius: 2px;
+    font-weight: 500;
+  }
+
+  /* HOW IT WORKS */
+  #how { background: var(--off-white); }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0;
+    position: relative;
+  }
+
+  .steps::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    right: 10%;
+    height: 0.5px;
+    background: var(--border-mid);
+  }
+
+  .step {
+    padding: 0 1.5rem 1.5rem;
+    position: relative;
+    text-align: center;
+  }
+
+  .step-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 0.5px solid var(--border-mid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--rose-gold);
+    margin: 0 auto 1.2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* CONTACT */
+  #contact { background: var(--rose-dark); }
+
+  #contact .section-label { color: var(--blush-mid); }
+  #contact .section-title { color: var(--white); font-family: 'Noto Serif KR', serif; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.9;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  .contact-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-details li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .contact-details .lbl {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--blush-mid);
+  }
+
+  .contact-details a, .contact-details span {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .contact-details a:hover { color: white; }
+
+  .enquiry-form {
+    background: rgba(255,255,255,0.05);
+    border: 0.5px solid rgba(237,217,204,0.2);
+    border-radius: 4px;
+    padding: 2.5rem;
+  }
+
+  .enquiry-form h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 1.5rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blush-mid);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: rgba(255,255,255,0.06);
+    border: 0.5px solid rgba(237,217,204,0.2);
+    border-radius: 2px;
+    padding: 11px 14px;
+    color: rgba(255,255,255,0.85);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: vertical;
+  }
+
+  .form-group select option { background: var(--rose-dark); }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--blush-mid);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(237,217,204,0.3);
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 13px;
+    background: var(--rose-gold);
+    color: white;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .btn-submit:hover { background: var(--blush-mid); }
+
+  /* FOOTER */
+  footer {
+    background: var(--rose-dark);
+    border-top: 0.5px solid rgba(237,217,204,0.1);
+    padding: 1.5rem 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  footer p { font-size: 12px; color: rgba(237,217,204,0.4); }
+
+  footer a {
+    font-size: 12px;
+    color: rgba(237,217,204,0.4);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  footer a:hover { color: var(--blush-mid); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .brand-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .why-item { border-right: none; border-bottom: 0.5px solid var(--border); }
+    .steps::before { display: none; }
+    nav { padding: 0 4vw; }
+    .nav-links { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <span class="nav-brand-kr">NK 골디락스 공식 싱가포르 유통사</span>
+    <span class="nav-brand-en">PTS Hair & Skin Care</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#brand">Brand</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#contact" class="nav-cta">Enquire</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg-circle"></div>
+  <div class="hero-bg-ring"></div>
+  <div class="hero-inner">
+    <p class="hero-kr-tag">NK 골디락스 · NK Goldilocks</p>
+    <p class="hero-sub">Exclusive Singapore Distributor</p>
+    <h1>Professional Korean<br>Hair Care, <span>Priced Right.</span></h1>
+    <p class="hero-desc">
+      PTS Hair & Skin Care brings NK Goldilocks professional salon products directly to Singapore salons — at prices that protect your margins without compromising your results.
+    </p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary">Request a trial</a>
+      <a href="#products" class="btn-secondary">See products</a>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><div class="trust-dot"></div><span>Exclusive Singapore Distributor</span></div>
+  <div class="trust-item"><div class="trust-dot"></div><span>Professional Salon Grade</span></div>
+  <div class="trust-item"><div class="trust-dot"></div><span>Zero-Risk Trials Available</span></div>
+  <div class="trust-item"><div class="trust-dot"></div><span>Low MOQ Entry Points</span></div>
+</div>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-inner">
+    <p class="section-label">Why PTS</p>
+    <h2 class="section-title">The supplier that works for your salon</h2>
+    <div class="why-grid">
+
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="why-title">Competitive pricing</h3>
+        <p class="why-desc">Our rebonding creams and treatment lines are priced meaningfully below market rate — the kind of saving that shows up immediately in your margins.</p>
+      </div>
+
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="why-title">Try before you commit</h3>
+        <p class="why-desc">We offer zero-risk trial arrangements for qualifying salons. Experience the product with real clients before placing your first order.</p>
+      </div>
+
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        </div>
+        <h3 class="why-title">Backed by Pro Trim</h3>
+        <p class="why-desc">NK Goldilocks is trusted and used by Pro Trim Hair salons across Singapore — our own in-house proof of product performance and reliability.</p>
+      </div>
+
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+        </div>
+        <h3 class="why-title">Low MOQ, flexible ordering</h3>
+        <p class="why-desc">No large upfront commitments required. We work with salons at manageable quantities so switching carries no inventory risk.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BRAND -->
+<section id="brand">
+  <div class="section-inner">
+    <div class="brand-grid">
+      <div class="brand-visual">
+        <div class="brand-visual-text">
+          NK 골디락스<br>
+          <small>NK Goldilocks · Korea</small>
+        </div>
+      </div>
+      <div class="brand-body">
+        <p class="section-label">The Brand</p>
+        <h2 class="section-title" style="margin-bottom:1.5rem;">Korean professional hair care, built for salons</h2>
+        <p>NK Goldilocks is a Korean professional hair and skin care brand formulated specifically for salon-grade results. Mid-market in positioning, it hits the sweet spot where quality meets accessibility.</p>
+        <p>As the exclusive Singapore distributor, PTS Hair & Skin Care ensures consistent supply, genuine product, and reliable service — with the full weight of our salon industry relationships behind every order.</p>
+        <p>K-beauty has built trust globally for quality formulations. NK Goldilocks brings that ethos to the professional salon supply channel, at prices that make business sense.</p>
+        <div class="brand-stat-row">
+          <div class="brand-stat">
+            <div class="num">SG</div>
+            <div class="lbl">Exclusive distributor</div>
+          </div>
+          <div class="brand-stat">
+            <div class="num">KR</div>
+            <div class="lbl">Korean formulation</div>
+          </div>
+          <div class="brand-stat">
+            <div class="num">B2B</div>
+            <div class="lbl">Salon-only supply</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-inner">
+    <p class="section-label">Products</p>
+    <h2 class="section-title">NK Goldilocks product range</h2>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-img">
+          <p class="product-img-placeholder">NK 골디락스</p>
+        </div>
+        <div class="product-body">
+          <p class="product-type">Treatment</p>
+          <h3 class="product-name">Rebonding Cream System</h3>
+          <p class="product-desc">Professional-grade rebonding system delivering smooth, lasting results. Priced to give salons meaningful margin advantage over comparable brands.</p>
+          <span class="product-badge">Price Competitive</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <p class="product-img-placeholder">NK 골디락스</p>
+        </div>
+        <div class="product-body">
+          <p class="product-type">Treatment</p>
+          <h3 class="product-name">Hair Treatment Line</h3>
+          <p class="product-desc">Conditioning and repair treatments suited to the Singapore climate. Korean formulation designed for Asian hair types and texture profiles.</p>
+          <span class="product-badge">Salon Proven</span>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <p class="product-img-placeholder">NK 골디락스</p>
+        </div>
+        <div class="product-body">
+          <p class="product-type">Care Range</p>
+          <h3 class="product-name">Skin Care Essentials</h3>
+          <p class="product-desc">Complementary skin care products to round out your salon's retail and service offering with K-beauty credibility.</p>
+          <span class="product-badge">Full Range</span>
+        </div>
+      </div>
+
+    </div>
+    <p style="margin-top:1.5rem; font-size:13px; color:var(--text-muted);">Full product catalogue and pricing available upon enquiry. Contact us to receive a tailored quote for your salon.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="section-inner">
+    <p class="section-label">How It Works</p>
+    <h2 class="section-title">Simple from first contact to first order</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3 class="step-title">Send an enquiry</h3>
+        <p class="step-desc">Fill in the contact form or WhatsApp us. We'll respond within one business day to understand your salon's needs.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3 class="step-title">Receive a trial set</h3>
+        <p class="step-desc">Qualifying salons receive a trial arrangement — test the product on real clients with no upfront commitment.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3 class="step-title">Get your quote</h3>
+        <p class="step-desc">We tailor pricing and MOQs to your volume. No opaque pricing — straightforward numbers that make business sense.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3 class="step-title">Place your order</h3>
+        <p class="step-desc">Order with confidence. We handle delivery, keep you supplied, and stay available for any queries post-order.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Request a trial or price list</h2>
+        <p class="contact-intro">
+          We work directly with salon owners and managers across Singapore. Whether you want to compare prices, request a product trial, or simply learn more — reach out and we'll respond within the day.
+        </p>
+        <ul class="contact-details">
+          <li>
+            <span class="lbl">WhatsApp / Phone</span>
+            <a href="tel:+65XXXXXXXX">+65 XXXX XXXX</a>
+          </li>
+          <li>
+            <span class="lbl">Email</span>
+            <a href="mailto:enquiry@ptshairskincare.com">enquiry@ptshairskincare.com</a>
+          </li>
+          <li>
+            <span class="lbl">Location</span>
+            <span>Singapore</span>
+          </li>
+          <li>
+            <span class="lbl">Business Registration</span>
+            <span>PTS Hair and Skin Care (Sole Proprietorship)</span>
+          </li>
+        </ul>
+      </div>
+      <div class="enquiry-form">
+        <h3>Salon enquiry form</h3>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sname">Salon name</label>
+              <input type="text" id="sname" placeholder="Your salon" required>
+            </div>
+            <div class="form-group">
+              <label for="cname">Contact name</label>
+              <input type="text" id="cname" placeholder="Your name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cemail">Email</label>
+            <input type="email" id="cemail" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <select id="interest">
+              <option value="">Select a product or service</option>
+              <option>Rebonding Cream System</option>
+              <option>Hair Treatment Line</option>
+              <option>Skin Care Range</option>
+              <option>Full product catalogue & pricing</option>
+              <option>Trial arrangement</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cmsg">Message (optional)</label>
+            <textarea id="cmsg" rows="3" placeholder="Tell us about your salon or any specific questions..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Submit enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 PTS Hair and Skin Care. Sole Proprietorship, Singapore. Exclusive distributor of NK Goldilocks.</p>
+  <a href="https://joshuatan.github.io" target="_blank" rel="noopener">Joshua Poh — Founder →</a>
+</footer>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  btn.textContent = 'Enquiry submitted ✓';
+  btn.disabled = true;
+  btn.style.background = '#7A4F3A';
+  setTimeout(() => {
+    btn.textContent = 'Submit enquiry';
+    btn.disabled = false;
+    btn.style.background = '';
+    e.target.reset();
+  }, 3000);
+}
+</script>
+
+</body>
+</html>
